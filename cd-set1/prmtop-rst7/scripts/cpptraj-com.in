@@ -1,0 +1,10 @@
+parm ../complex_name.prmtop
+trajin ../complex_name.rst7
+strip :Cl-
+strip :Na+
+strip :WAT outprefix complex
+trajout complex.crd crd
+trajout complex.pdb pdb
+run
+quit
+

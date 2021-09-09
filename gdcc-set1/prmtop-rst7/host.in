@@ -1,0 +1,11 @@
+parm temoa-3.prmtop
+trajin temoa-3.rst7
+reference temoa-3.rst7
+strip :WAT
+strip :Cl-
+strip :Na+
+strip :MOL outprefix temoa-dry nobox
+trajout temoa-dry.crd restart nobox
+writedata temoa-dry.crd
+run
+quit

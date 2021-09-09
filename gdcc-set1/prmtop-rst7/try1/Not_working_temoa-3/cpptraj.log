@@ -1,0 +1,7 @@
+# 08/29/21 14:39:34
+parm complex.prmtop
+trajin complex.crd
+strip :OCB outprefix guest
+trajout guest.crd crd
+run
+quit

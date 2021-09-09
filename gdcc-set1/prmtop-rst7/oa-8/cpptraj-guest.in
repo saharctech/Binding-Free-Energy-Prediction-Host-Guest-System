@@ -1,0 +1,10 @@
+parm complex.prmtop
+trajin complex.crd
+strip :WAT
+strip :Cl-
+strip :Na+
+strip :OCT outprefix guest
+trajout guest.crd restart
+trajout guest.pdb pdb
+run
+quit

@@ -1,0 +1,11 @@
+parm acd-1-p.prmtop
+trajin acd-1-p.rst7
+reference acd-1-p.rst7
+strip :WAT
+strip :Cl-
+strip :Na+
+strip :MOL outprefix acd-1-p-dry nobox
+trajout acd-1-p-dry.crd restart nobox
+writedata acd-1-p-dry.crd
+run
+quit

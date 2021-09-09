@@ -1,0 +1,7 @@
+Sample single point PB calculation
+&cntrl
+ipb=1, inp=1
+/
+&pb
+npbverb=1, fillratio=1.5, saopt=1, radiopt=0, epsin=1.0, epsout=80
+/

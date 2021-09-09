@@ -1,0 +1,10 @@
+parm ../acd-s9-s.prmtop
+trajin ../acd-s9-s.rst7
+strip :WAT
+strip :Cl-
+strip :Na+
+strip :MGO outprefix guest-acd-s9-s
+trajout guest-acd-s9-s.crd restart
+trajout guest-acd-s9-s.pdb pdb
+run
+quit

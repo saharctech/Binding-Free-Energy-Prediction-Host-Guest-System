@@ -1,0 +1,5 @@
+Etot   =         2.6721 
+VDWAALS    =        -0.2102
+EELEC  =        11.4711  
+EPB     =        -9.9341
+ECAVITY=         1.3453

@@ -1,0 +1,59 @@
+
+          -------------------------------------------------------
+          GBNSR6 2015                       
+          -------------------------------------------------------
+
+| Run on 08/29/2021 at 14:35:36
+
+File Assignments:
+|  MDIN: ../scripts/gbnsr6.in                                                  
+| MDOUT: guest.out                                                             
+|INPCRD: guest.crd                                                             
+|  PARM: guest.prmtop                                                          
+|
+
+ Here is the input file:
+
+compute                                                                        
+&cntrl                                                                         
+inp=1                                                                          
+/                                                                              
+&gb                                                                            
+epsin=1.0, epsout=80, istrng=0, space=0.5,                                     
+arcres=0.2, B=0.028, alpb=1, rbornstat=0, cavity_surften=0.005                 
+/                                                                              
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 08/29/21 Time = 14:20:55
+ NATOM  =      30 NTYPES =       6 NBONH =      18 MBONA  =      12
+ NTHETH =      38 MTHETA =      16 NPHIH =      66 MPHIA  =      15
+ NHPARM =       0 NPARM  =       0 NNB   =     162 NRES   =       1
+ NBONA  =      12 NTHETA =      16 NPHIA =      15 NUMBND =       7
+ NUMANG =      12 NPTRA  =       4 NATYP =      13 NPHB   =       0
+ IFBOX  =       1 NMXRS  =      30 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+GB Warning in  gb_read(): B=0 is recommended for molecules with more than 50 atoms
+
+|     Memory Use     Allocated
+|     Real                1151
+|     Hollerith            183
+|     Integer            19240
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total               84 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
