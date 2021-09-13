@@ -1,0 +1,10 @@
+parm Solvated/OAMe-G6.prmtop
+trajin Solvated/OAMe-G6.rst7
+strip :WAT
+strip :Cl-
+strip :Na+
+strip :MOL outprefix host
+trajout host.crd restart
+trajout host.pdb pdb
+run
+quit

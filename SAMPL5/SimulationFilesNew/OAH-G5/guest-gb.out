@@ -1,0 +1,98 @@
+
+          -------------------------------------------------------
+          GBNSR6 2015                       
+          -------------------------------------------------------
+
+| Run on 09/12/2021 at 11:27:54
+
+File Assignments:
+|  MDIN: ../scripts/gbnsr6.in                                                  
+| MDOUT: guest-gb.out                                                          
+|INPCRD: guest.crd                                                             
+|  PARM: guest.prmtop                                                          
+|
+
+ Here is the input file:
+
+compute                                                                        
+&cntrl                                                                         
+inp=1                                                                          
+/                                                                              
+&gb                                                                            
+epsin=1.0, epsout=80, istrng=0, space=0.5,                                     
+arcres=0.2, B=0.028, alpb=1, rbornstat=0, cavity_surften=0.005                 
+/                                                                              
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 09/12/21 Time = 11:22:34
+ NATOM  =      30 NTYPES =       6 NBONH =      18 MBONA  =      12
+ NTHETH =      38 MTHETA =      16 NPHIH =      66 MPHIA  =      15
+ NHPARM =       0 NPARM  =       0 NNB   =     162 NRES   =       1
+ NBONA  =      12 NTHETA =      16 NPHIA =      15 NUMBND =       7
+ NUMANG =      12 NPTRA  =       4 NATYP =      13 NPHB   =       0
+ IFBOX  =       1 NMXRS  =      30 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+GB Warning in  gb_read(): B=0 is recommended for molecules with more than 50 atoms
+
+|     Memory Use     Allocated
+|     Real                1151
+|     Hollerith            183
+|     Integer            19240
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total               84 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+Cpptraj Generated Restart                                                       
+ begin time read from input coords =  1051.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+--------------------------------------------------------------------------------
+   3.  RESULTS
+--------------------------------------------------------------------------------
+
+ Cavity solvation energy      1.9432
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -16.6013  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =       -33.1219  VDWAALS    =         0.0000
+ EELEC  =        65.2257  EGB     =       -50.6483  RESTRAINT  =         0.0000
+ ESURF  =         1.9432
+ ------------------------------------------------------------------------------
+
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -16.6013  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =       -33.1219  VDWAALS    =         0.0000
+ EELEC  =        65.2257  EGB     =       -50.6483  RESTRAINT  =         0.0000
+ ESURF  =         1.9432
+ ------------------------------------------------------------------------------
+
+|           Job began  at 11:27:54.909  on 09/12/2021
+|           Setup done at 11:27:54.911  on 09/12/2021
+|           Run   done at 11:27:54.924  on 09/12/2021
+|     wallclock() was called      72 times
