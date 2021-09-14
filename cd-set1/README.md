@@ -1,5 +1,5 @@
+## CD-set1 dataset
 Description of the files in this directory:
-- pdb: contains raw pdb files of hosts and guests.
-- mol2: contains mol2 files of host and guests.
-- pdf: pdb files of hosts and guests.
-- prmtop and rst7 files in the current directory are the solvated complex molecules taken from Mobley's group github repository (https://github.com/MobleyLab/benchmarksets/tree/master/input_files)
+- pdb, mol2 and sdf folders contains pdb, mol2 and sdf files of free hosts and guests.
+- prmtop-rst contains simulation files.
+- dry-complex-pdb contains dry complex files of respective dataset.
