@@ -19,6 +19,6 @@ Details about the cd-set1, cd-set2 and cdcc system, refer to Mobley GitHub page 
 
 
 ## References:
-1- Mobley's lab: https://github.com/MobleyLab/benchmarksets
-2- Drug Design Data Resource (SAMPL5): https://drugdesigndata.org/about/sampl5
-3- SAMPL5 experimental results: https://link.springer.com/article/10.1007/s10822-016-9970-8/tables/1
+1. Mobley's lab: https://github.com/MobleyLab/benchmarksets
+2. Drug Design Data Resource (SAMPL5): https://drugdesigndata.org/about/sampl5
+3. SAMPL5 experimental results: https://link.springer.com/article/10.1007/s10822-016-9970-8/tables/1
