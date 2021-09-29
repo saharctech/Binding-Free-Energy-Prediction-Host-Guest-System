@@ -1,0 +1,473 @@
+
+          -------------------------------------------------------
+          PBSA VERSION 2019                       UC Irvine
+          -------------------------------------------------------
+
+| Run on 09/26/2021 at 23:32:24
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: ../../../scripts/pbsa.in                                              
+| MDOUT: lig-pb.out                                                            
+|INPCRD: ../top_crd/lig.crd                                                    
+|  PARM: ../top_crd/lig.top                                                    
+|
+
+ Here is the input file:
+
+Sample single point PB calculation                                             
+&cntrl                                                                         
+ipb=1, inp=1                                                                   
+/                                                                              
+&pb                                                                            
+npbverb=1, fillratio=1.5, saopt=1, radiopt=0, epsin=1.0, epsout=80             
+/                                                                              
+ PBSA Warning in pb_read(): sprob=0.557 is optimized for inp=2 and  should not be used with inp=1. It has been reset to 1.4.
+ PBSA Warning in pb_read(): cavity_surften=0.0378 is optimized for inp=2  and should not be used with inp=1. It has been reset to 0.005000.
+ PBSA Warning in pb_read(): cavity_offset=-0.5692 is optimized for inp=2  and should not be used with inp=1. It has been reset to 0.000.
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 09/26/21 Time = 22:06:45
+ NATOM  =      74 NTYPES =       9 NBONH =      34 MBONA  =      44
+ NTHETH =      74 MTHETA =      59 NPHIH =     149 MPHIA  =     100
+ NHPARM =       0 NPARM  =       0 NNB   =     403 NRES   =       1
+ NBONA  =      44 NTHETA =      59 NPHIA =     100 NUMBND =      12
+ NUMANG =      21 NPTRA  =      23 NATYP =      10 NPHB   =       0
+ IFBOX  =       0 NMXRS  =      74 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real                2791
+|     Hollerith            225
+|     Integer            23198
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total              113 kbytes
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+default_name                                                                    
+
+General flags:
+     imin    =       1, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =      50, ntrx    =       1, ntwr    =     500
+     iwrap   =       0, ntwx    =       0, ntwv    =       0, ntwe    =       0
+     ioutfm  =       0, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       1, ntb     =       1, ipb     =       1, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     =   8.00000, intdiel =   1.00000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Energy minimization:
+     maxcyc  =       1, ncyc    =      10, ntmin   =       1
+     dx0     =   0.01000, drms    =   0.00010
+
+======== Implicit Solvent Initialization ========
+
+     Max Nonbonded Pairs:     2738     2738
+
+ no. of atoms processed in PB initialization:    74
+  NUM  RESI  NAME  TYPE    CHARGE ATM CRG/H   GRP CRG   PB RADI   NP RADI
+    1  LIG   C13   ca   -0.132500  0.000250  0.026750  1.700000  1.657606
+    2  LIG   C14   ca   -0.117000  0.020500 -0.080050  1.700000  1.657606
+    3  LIG   H14   ha    0.137500  0.137500  0.137500  1.300000  1.312739
+    4  LIG   H13   ha    0.132750  0.132750  0.132750  1.300000  1.312739
+    5  LIG   C12   ca   -0.125500  0.006000  0.006500  1.700000  1.657606
+    6  LIG   H12   ha    0.131500  0.131500  0.131500  1.300000  1.312739
+    7  LIG   C11   ca   -0.132500  0.000250  0.026750  1.700000  1.657606
+    8  LIG   H11   ha    0.132750  0.132750  0.132750  1.300000  1.312739
+    9  LIG   C10   ca   -0.117000  0.020500 -0.080050  1.700000  1.657606
+   10  LIG   H10   ha    0.137500  0.137500  0.137500  1.300000  1.312739
+   11  LIG   C09   ca   -0.100800 -0.100800  0.213900  1.700000  1.657606
+   12  LIG   C08   c3    0.117800  0.273700 -0.271400  1.700000  1.698855
+   13  LIG   H081  h1    0.077950  0.077950  0.077950  1.300000  1.210999
+   14  LIG   H082  h1    0.077950  0.077950  0.077950  1.300000  1.210999
+   15  LIG   N01   n    -0.444300 -0.444300  0.771300  1.550000  1.590432
+   16  LIG   C02   c     0.785500  0.785500 -0.760600  1.700000  1.657606
+   17  LIG   O15   o    -0.657500 -0.657500  0.128000  1.500000  1.524060
+   18  LIG   N03   n    -0.444300 -0.444300  0.771300  1.550000  1.590432
+   19  LIG   C16   c3    0.117800  0.273700 -0.271400  1.700000  1.698855
+   20  LIG   C17   ca   -0.100800 -0.100800  0.213900  1.700000  1.657606
+   21  LIG   C18   ca   -0.117000  0.020500 -0.080050  1.700000  1.657606
+   22  LIG   C19   ca   -0.132500  0.000250  0.026750  1.700000  1.657606
+   23  LIG   C20   ca   -0.125500  0.006000  0.006500  1.700000  1.657606
+   24  LIG   C21   ca   -0.132500  0.000250  0.026750  1.700000  1.657606
+   25  LIG   C22   ca   -0.117000  0.020500 -0.080050  1.700000  1.657606
+   26  LIG   H22   ha    0.137500  0.137500  0.137500  1.300000  1.312739
+   27  LIG   H21   ha    0.132750  0.132750  0.132750  1.300000  1.312739
+   28  LIG   H20   ha    0.131500  0.131500  0.131500  1.300000  1.312739
+   29  LIG   H19   ha    0.132750  0.132750  0.132750  1.300000  1.312739
+   30  LIG   H18   ha    0.137500  0.137500  0.137500  1.300000  1.312739
+   31  LIG   H161  h1    0.077950  0.077950  0.077950  1.300000  1.210999
+   32  LIG   H162  h1    0.077950  0.077950  0.077950  1.300000  1.210999
+   33  LIG   C04   c3    0.058200  0.156400  0.140700  1.700000  1.698855
+   34  LIG   C23   c3    0.100900  0.247300  0.076300  1.700000  1.698855
+   35  LIG   O24   os   -0.327400 -0.327400  0.030500  1.500000  1.578049
+   36  LIG   C25   ca    0.110600  0.110600 -0.275800  1.700000  1.657606
+   37  LIG   C26   ca   -0.179500 -0.029500  0.116100  1.700000  1.657606
+   38  LIG   C27   ca   -0.099250  0.035000 -0.022500  1.700000  1.657606
+   39  LIG   C28   ca   -0.161500 -0.028000  0.042000  1.700000  1.657606
+   40  LIG   C29   ca   -0.099250  0.035000 -0.022500  1.700000  1.657606
+   41  LIG   C30   ca   -0.179500 -0.029500  0.116100  1.700000  1.657606
+   42  LIG   H30   ha    0.150000  0.150000  0.150000  1.300000  1.312739
+   43  LIG   H29   ha    0.134250  0.134250  0.134250  1.300000  1.312739
+   44  LIG   H28   ha    0.133500  0.133500  0.133500  1.300000  1.312739
+   45  LIG   H27   ha    0.134250  0.134250  0.134250  1.300000  1.312739
+   46  LIG   H26   ha    0.150000  0.150000  0.150000  1.300000  1.312739
+   47  LIG   H231  h1    0.073200  0.073200  0.073200  1.300000  1.210999
+   48  LIG   H232  h1    0.073200  0.073200  0.073200  1.300000  1.210999
+   49  LIG   H04   h1    0.098200  0.098200  0.098200  1.300000  1.210999
+   50  LIG   C05   c3    0.101600  0.181300  0.327700  1.700000  1.698855
+   51  LIG   O31   oh   -0.602300 -0.191300 -0.010000  1.500000  1.621436
+   52  LIG   HO31  ho    0.411000  0.411000  0.411000  0.800000  0.268962
+   53  LIG   H05   h1    0.079700  0.079700  0.079700  1.300000  1.210999
+   54  LIG   C06   c3    0.101600  0.181300  0.327700  1.700000  1.698855
+   55  LIG   O32   oh   -0.602300 -0.191300 -0.010000  1.500000  1.621436
+   56  LIG   HO32  ho    0.411000  0.411000  0.411000  0.800000  0.268962
+   57  LIG   H06   h1    0.079700  0.079700  0.079700  1.300000  1.210999
+   58  LIG   C07   c3    0.058200  0.156400  0.140700  1.700000  1.698855
+   59  LIG   H07   h1    0.098200  0.098200  0.098200  1.300000  1.210999
+   60  LIG   C33   c3    0.100900  0.247300  0.076300  1.700000  1.698855
+   61  LIG   H331  h1    0.073200  0.073200  0.073200  1.300000  1.210999
+   62  LIG   H332  h1    0.073200  0.073200  0.073200  1.300000  1.210999
+   63  LIG   O34   os   -0.327400 -0.327400  0.030500  1.500000  1.578049
+   64  LIG   C35   ca    0.110600  0.110600 -0.275800  1.700000  1.657606
+   65  LIG   C36   ca   -0.179500 -0.029500  0.116100  1.700000  1.657606
+   66  LIG   H36   ha    0.150000  0.150000  0.150000  1.300000  1.312739
+   67  LIG   C37   ca   -0.099250  0.035000 -0.022500  1.700000  1.657606
+   68  LIG   H37   ha    0.134250  0.134250  0.134250  1.300000  1.312739
+   69  LIG   C38   ca   -0.161500 -0.028000  0.042000  1.700000  1.657606
+   70  LIG   H38   ha    0.133500  0.133500  0.133500  1.300000  1.312739
+   71  LIG   C39   ca   -0.099250  0.035000 -0.022500  1.700000  1.657606
+   72  LIG   H39   ha    0.134250  0.134250  0.134250  1.300000  1.312739
+   73  LIG   C40   ca   -0.179500 -0.029500  0.116100  1.700000  1.657606
+   74  LIG   H40   ha    0.150000  0.150000  0.150000  1.300000  1.312739
+
+ total system charges (+/-) for PB        0.0000        6.2941       -6.2941
+ cavity_surften =        0.0050 cavity_offset =        0.0000
+
+   SAS Surface: surface dots generated:    366
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+default_name                                                                    
+ begin time read from input coords =     0.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+  NB-update: atom-based nb list     2240
+
+
+======== Setting up Grid Parameters ========
+Using bounding box for grid setup
+ Bounding Box at level:           2
+ Bounding Box Center:      12.500    23.500     5.500
+ Xmin, Xmax, Xmax-Xmin:     4.872    20.489    15.617
+ Ymin, Ymax, Ymax-Ymin:    17.214    29.773    12.559
+ Zmin, Zmax, Zmax-Zmin:    -0.329    11.749    12.078
+ Grid dimension at level     2    49   43   43
+ Grid origin corrected at level     2      0.000    12.500    -5.500
+ Bounding Box at level:           1
+ Bounding Box Center:      12.500    23.500     5.500
+ Xmin, Xmax, Xmax-Xmin:     4.872    20.489    15.617
+ Ymin, Ymax, Ymax-Ymin:    17.214    29.773    12.559
+ Zmin, Zmax, Zmax-Zmin:    -0.329    11.749    12.078
+PB Warn in setgrd(): focusing grid too large    2
+ fillratio is automatically increased to 2.500
+ Grid dimension at level     1    11    9    9
+ Grid origin corrected at level     1    -11.500     3.500   -14.500
+------- VMD goodie --------
+#First Level Geometric Box
+draw materials off
+draw color green
+draw line "  -11.500    3.500  -14.500" "   32.500    3.500  -14.500"
+draw line "  -11.500    3.500  -14.500" "  -11.500   39.500  -14.500"
+draw line "  -11.500    3.500  -14.500" "  -11.500    3.500   21.500"
+draw line "   32.500    3.500  -14.500" "   32.500   39.500  -14.500"
+draw line "   32.500    3.500  -14.500" "   32.500    3.500   21.500"
+draw line "  -11.500   39.500  -14.500" "   32.500   39.500  -14.500"
+draw line "  -11.500   39.500  -14.500" "  -11.500   39.500   21.500"
+draw line "  -11.500    3.500   21.500" "   32.500    3.500   21.500"
+draw line "  -11.500    3.500   21.500" "  -11.500   39.500   21.500"
+draw line "   32.500   39.500   21.500" "   32.500   39.500  -14.500"
+draw line "   32.500   39.500   21.500" "  -11.500   39.500   21.500"
+draw line "   32.500   39.500   21.500" "   32.500    3.500   21.500"
+#2nd Level Geometric Box
+draw color blue
+draw line "    0.000   12.500   -5.500" "   25.000   12.500   -5.500"
+draw line "    0.000   12.500   -5.500" "    0.000   34.500   -5.500"
+draw line "    0.000   12.500   -5.500" "    0.000   12.500   16.500"
+draw line "   25.000   12.500   -5.500" "   25.000   34.500   -5.500"
+draw line "   25.000   12.500   -5.500" "   25.000   12.500   16.500"
+draw line "    0.000   34.500   -5.500" "   25.000   34.500   -5.500"
+draw line "    0.000   34.500   -5.500" "    0.000   34.500   16.500"
+draw line "    0.000   12.500   16.500" "   25.000   12.500   16.500"
+draw line "    0.000   12.500   16.500" "    0.000   34.500   16.500"
+draw line "   25.000   34.500   16.500" "   25.000   34.500   -5.500"
+draw line "   25.000   34.500   16.500" "    0.000   34.500   16.500"
+draw line "   25.000   34.500   16.500" "   25.000   12.500   16.500"
+--- End VMD goodie --------
+
+======== Setting up Solvent Accessibility Data ========
+Setting up working radii
+Number of SA srf points exposed  3069
+ Number of SA arcs generated  1248
+ Number of SA arc points exposed        1950 Number of trimer arc points exposed         170
+ with resolution (A) = .250000E+00
+
+Atomic solvent accessible surface area:
+           1    9.2386858057698
+           2    4.6193429028849
+           3    7.0083266934508
+           4   31.0368753567107
+           5   10.2285449992452
+           6   30.7865779748018
+           7   11.5483572572123
+           8   30.5362805928928
+           9    5.2792490318685
+          10    9.0107057487225
+          11    0.9898591934753
+          12    0.3299530644918
+          13   16.5196272059912
+          14    3.7544607286344
+          15    0.0000000000000
+          16    0.0000000000000
+          17   23.9664034971069
+          18    0.0000000000000
+          19    0.0000000000000
+          20    0.9898591934753
+          21    7.5889204833109
+          22   11.5483572572123
+          23   11.8783103217041
+          24   11.2184041927205
+          25    4.2893898383931
+          26    9.5113005125404
+          27   30.7865779748018
+          28   31.5374701205286
+          29   30.7865779748018
+          30    9.2610031306314
+          31   16.2693298240822
+          32    2.2526764371806
+          33    0.0000000000000
+          34    0.3299530644918
+          35    5.1975332885292
+          36    3.6294837094096
+          37    5.6092020963603
+          38    9.8985919347534
+          39    9.2386858057698
+          40    7.5889204833109
+          41    4.9492959673767
+          42   10.2621926582673
+          43   30.5362805928928
+          44   31.0368753567107
+          45   31.0368753567107
+          46   25.0297381908957
+          47    0.2502973819090
+          48   11.7639769497210
+          49    1.0011895276358
+          50    0.0000000000000
+          51   25.9876664426461
+          52    3.1573864527226
+          53    6.5077319296329
+          54    0.0000000000000
+          55   22.8113960996560
+          56    6.1485946710914
+          57    5.2562450200881
+          58    0.0000000000000
+          59    0.7508921457269
+          60    0.6599061289836
+          61    0.5005947638179
+          62   11.2633821859031
+          63    7.5075480834311
+          64    3.9594367739014
+          65    5.2792490318685
+          66    9.0107057487225
+          67    7.2589674188192
+          68   30.0356858290749
+          69    8.9087327412781
+          70   30.0356858290749
+          71    8.9087327412781
+          72   31.5374701205286
+          73    5.9391551608520
+          74   24.7794408089868
+
+ ======== FDPB Summary ========
+
+ Do FDPB every           1 steps
+ Nonbonded Update
+   residue cutoff is set to   99.9000000000000
+   fdpb cutoff is set to    5.0000000000000
+   sas cutoff is set to    9.0000000000000
+   nonbonded cutoff is set to    0.0000000000000
+ Grid Constants
+   Grid dimension      11       9       9
+   Grid spacing set to     4.000
+   Grid boundary
+       -11.500    36.500
+         3.500    43.500
+       -14.500    25.500
+
+ Dielectric Map
+   Use cavity radii in the prmtop file
+
+   Use probe-based SES definition
+     Compute SAS/SAR every           1 steps
+     Solvent probe radius   1.40000000000000
+     Surface dots per atom     366
+     Buried atom radii increment   0.79800000000000
+     Threshhold for exposed atom   0.08000000000000
+     Current SAS 816.33512580747117
+
+ Boundary conditions
+   sum of grid charges as independent DH spheres
+
+ Physical constants
+   Solute dielectric constant  :   1.00000000000000
+   Solvent dielectric constant :   80.0000000000000
+   Temperature (K)             :   300.000000000000
+   Ionic strength (mM)         :   0.00000000000000
+   Debye-Huckel parameter (1/A):   0.00000000000000
+
+FD Solver Option
+   Use Modified ICCG solver
+
+ Iteration data
+   Maximum iterations  :         100
+   Convergence criteria:  1.000000000000000E-03
+   Iterations required        :     6
+   Norm of the constant vector:       109.8197697913
+   Norm of the residual vector:      0.0968865781241
+   Convergence achieved       :  8.8223257349945359E-04
+
+ Total molecular surface    497.0139
+
+ ======== FDPB Summary ========
+
+ Do FDPB every           1 steps
+ Nonbonded Update
+   residue cutoff is set to   99.9000000000000
+   fdpb cutoff is set to    5.0000000000000
+   sas cutoff is set to    9.0000000000000
+   nonbonded cutoff is set to    0.0000000000000
+ Grid Constants
+   Grid dimension      49      43      43
+   Grid spacing set to     0.500
+   Grid boundary
+         0.000    25.000
+        12.500    34.500
+        -5.500    16.500
+
+ Dielectric Map
+   Use cavity radii in the prmtop file
+
+   Use probe-based SES definition
+     Compute SAS/SAR every           1 steps
+     Solvent probe radius   1.40000000000000
+     Surface dots per atom     366
+     Buried atom radii increment   0.79800000000000
+     Threshhold for exposed atom   0.08000000000000
+     Current SAS 816.33512580747117
+
+ Boundary conditions
+   sum of grid charges as independent DH spheres
+
+ Physical constants
+   Solute dielectric constant  :   1.00000000000000
+   Solvent dielectric constant :   80.0000000000000
+   Temperature (K)             :   300.000000000000
+   Ionic strength (mM)         :   0.00000000000000
+   Debye-Huckel parameter (1/A):   0.00000000000000
+
+FD Solver Option
+   Use Modified ICCG solver
+
+ Iteration data
+   Maximum iterations  :         100
+   Convergence criteria:  1.000000000000000E-03
+   Iterations required        :    14
+   Norm of the constant vector:     47532.3522327439
+   Norm of the residual vector:     38.0836728598016
+   Convergence achieved       :  8.0121582608248484E-04
+
+ Total surface charge       0.0003
+ Reaction field energy    -37.1577
+ Nonpolar SAS/SAV    816.3351      0.0000
+ Cavity solvation energy      4.0817
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =      -152.1987  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =         0.0000  VDWAALS    =       -13.2025
+ EELEC  =      -105.9202  EPB     =       -37.1577  RESTRAINT  =         0.0000
+ ECAVITY=         4.0817  EDISPER =         0.0000
+ ------------------------------------------------------------------------------
+
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =      -152.1987  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =         0.0000  VDWAALS    =       -13.2025
+ EELEC  =      -105.9202  EPB     =       -37.1577  RESTRAINT  =         0.0000
+ ECAVITY=         4.0817  EDISPER =         0.0000
+ ------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+   5.  TIMINGS
+--------------------------------------------------------------------------------
+
+| Total time                     0.07
+| Read prm/crd time              0.01
+| Force time                     0.07
+| Nonbond force                  0.07
+| PB Nonbond                     0.07
+| PB Sasa                        0.01
+| PB FD force                    0.07
+| PB Set linear sys              0.03
+| PB Solver                      0.04
+| PB SA arc                      0.01
+| PB circle                      0.00
+| PB exclude                     0.00
+| PB exmol                       0.02
+| PB exmol setup                 0.00
+| PB exmol part b                0.00
+| PB exmol part d                0.00
+| PB exmol part e                0.00
+| PB exmol part f                0.01
+| PB epsmap                      0.00
+| PB calsa                       0.00
+|           Job began  at 23:32:24.023  on 09/26/2021
+|           Setup done at 23:32:24.031  on 09/26/2021
+|           Run   done at 23:32:24.097  on 09/26/2021
+|     wallclock() was called     110 times

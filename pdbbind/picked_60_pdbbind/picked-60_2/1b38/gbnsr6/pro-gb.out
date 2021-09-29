@@ -1,0 +1,33 @@
+
+          -------------------------------------------------------
+          GBNSR6 2015                       
+          -------------------------------------------------------
+
+| Run on 09/26/2021 at 22:16:10
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: ../../../scripts/gbnsr6.in                                            
+| MDOUT: pro-gb.out                                                            
+|INPCRD: ../top_crd/pro.crd                                                    
+|  PARM: ../top_crd/pro.top                                                    
+|
+
+ Here is the input file:
+
+compute                                                                        
+&cntrl                                                                         
+inp=1                                                                          
+/                                                                              
+&gb                                                                            
+epsin=1.0, epsout=80, istrng=0, space=0.5,                                     
+arcres=0.2, B=0.028, alpb=1, rbornstat=0, cavity_surften=0.005                 
+/                                                                              
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+|  INFO: Old style PARM file read
+

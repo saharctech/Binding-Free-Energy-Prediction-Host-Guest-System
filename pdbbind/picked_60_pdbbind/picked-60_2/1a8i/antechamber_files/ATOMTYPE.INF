@@ -1,0 +1,176 @@
+====================================================================================
+-------------------------------ring property (I)------------------------------------
+
+               Ring 1               
+
+    1     1     1    C1
+    1     2     2    C2
+    1     3     4    C3
+    1     4     6    C4
+    1     5     8    C5
+    1     6    11    O5
+
+               Ring 2               
+
+    2     1     1    C1
+    2     2    12    N2
+    2     3    13    C8
+    2     4    15    N1
+    2     5    16    C7
+
+====================================================================================
+-------------------------------ring property (II)------------------------------------
+atom[ 1] (C1  ) belongs to one member of 6-membered  ring (No  1)
+atom[ 2] (C2  ) belongs to one member of 6-membered  ring (No  1)
+atom[ 4] (C3  ) belongs to one member of 6-membered  ring (No  1)
+atom[ 6] (C4  ) belongs to one member of 6-membered  ring (No  1)
+atom[ 8] (C5  ) belongs to one member of 6-membered  ring (No  1)
+atom[11] (O5  ) belongs to one member of 6-membered  ring (No  1)
+atom[ 1] (C1  ) belongs to one member of 5-membered  ring (No  2)
+atom[12] (N2  ) belongs to one member of 5-membered  ring (No  2)
+atom[13] (C8  ) belongs to one member of 5-membered  ring (No  2)
+atom[15] (N1  ) belongs to one member of 5-membered  ring (No  2)
+atom[16] (C7  ) belongs to one member of 5-membered  ring (No  2)
+
+====================================================================================
+-------------------------------ring property (III)-----------------------------------
+atom[ 1] (C1  ) involves in 1 5-member of ring(s)
+atom[ 1] (C1  ) involves in 1 6-member of ring(s)
+atom[ 2] (C2  ) involves in 1 6-member of ring(s)
+atom[ 3] (O2  ) is not in any ring (nr[3]=1)
+atom[ 4] (C3  ) involves in 1 6-member of ring(s)
+atom[ 5] (O3  ) is not in any ring (nr[5]=1)
+atom[ 6] (C4  ) involves in 1 6-member of ring(s)
+atom[ 7] (O4  ) is not in any ring (nr[7]=1)
+atom[ 8] (C5  ) involves in 1 6-member of ring(s)
+atom[ 9] (C6  ) is not in any ring (nr[9]=1)
+atom[10] (O6  ) is not in any ring (nr[10]=1)
+atom[11] (O5  ) involves in 1 6-member of ring(s)
+atom[12] (N2  ) involves in 1 5-member of ring(s)
+atom[13] (C8  ) involves in 1 5-member of ring(s)
+atom[14] (O8  ) is not in any ring (nr[14]=1)
+atom[15] (N1  ) involves in 1 5-member of ring(s)
+atom[16] (C7  ) involves in 1 5-member of ring(s)
+atom[17] (O7  ) is not in any ring (nr[17]=1)
+atom[18] (H12 ) is not in any ring (nr[18]=1)
+atom[19] (H2  ) is not in any ring (nr[19]=1)
+atom[20] (HO2 ) is not in any ring (nr[20]=1)
+atom[21] (H3  ) is not in any ring (nr[21]=1)
+atom[22] (HO3 ) is not in any ring (nr[22]=1)
+atom[23] (H4  ) is not in any ring (nr[23]=1)
+atom[24] (HO4 ) is not in any ring (nr[24]=1)
+atom[25] (H5  ) is not in any ring (nr[25]=1)
+atom[26] (H61 ) is not in any ring (nr[26]=1)
+atom[27] (H62 ) is not in any ring (nr[27]=1)
+atom[28] (HO6 ) is not in any ring (nr[28]=1)
+atom[29] (HN2 ) is not in any ring (nr[29]=1)
+
+====================================================================================
+-------------------------------aromatic property------------------------------------
+atom[ 1] (C1  ) is in 2 non-planar ring(s) (AR4)
+atom[ 2] (C2  ) is in 1 non-planar ring(s) (AR4)
+atom[ 4] (C3  ) is in 1 non-planar ring(s) (AR4)
+atom[ 6] (C4  ) is in 1 non-planar ring(s) (AR4)
+atom[ 8] (C5  ) is in 1 non-planar ring(s) (AR4)
+atom[11] (O5  ) is in 1 non-planar ring(s) (AR4)
+atom[12] (N2  ) is in 1 non-planar ring(s) (AR4)
+atom[13] (C8  ) is in 1 non-planar ring(s) (AR4)
+atom[15] (N1  ) is in 1 non-planar ring(s) (AR4)
+atom[16] (C7  ) is in 1 non-planar ring(s) (AR4)
+
+====================================================================================
+-------------------------------electronic property----------------------------------
+atom [ 1] (C1  ) is not an electron-withdrew atom
+atom [ 2] (C2  ) is not an electron-withdrew atom
+atom [ 3] (O2  ) is an electron-withdrew atom
+atom [ 4] (C3  ) is not an electron-withdrew atom
+atom [ 5] (O3  ) is an electron-withdrew atom
+atom [ 6] (C4  ) is not an electron-withdrew atom
+atom [ 7] (O4  ) is an electron-withdrew atom
+atom [ 8] (C5  ) is not an electron-withdrew atom
+atom [ 9] (C6  ) is not an electron-withdrew atom
+atom [10] (O6  ) is an electron-withdrew atom
+atom [11] (O5  ) is an electron-withdrew atom
+atom [12] (N2  ) is an electron-withdrew atom
+atom [13] (C8  ) is not an electron-withdrew atom
+atom [14] (O8  ) is an electron-withdrew atom
+atom [15] (N1  ) is an electron-withdrew atom
+atom [16] (C7  ) is not an electron-withdrew atom
+atom [17] (O7  ) is an electron-withdrew atom
+atom [18] (H12 ) is not an electron-withdrew atom
+atom [19] (H2  ) is not an electron-withdrew atom
+atom [20] (HO2 ) is not an electron-withdrew atom
+atom [21] (H3  ) is not an electron-withdrew atom
+atom [22] (HO3 ) is not an electron-withdrew atom
+atom [23] (H4  ) is not an electron-withdrew atom
+atom [24] (HO4 ) is not an electron-withdrew atom
+atom [25] (H5  ) is not an electron-withdrew atom
+atom [26] (H61 ) is not an electron-withdrew atom
+atom [27] (H62 ) is not an electron-withdrew atom
+atom [28] (HO6 ) is not an electron-withdrew atom
+atom [29] (HN2 ) is not an electron-withdrew atom
+
+====================================================================================
+--------------------------------connectivity property-------------------------------
+atom[ 1] (C1  )     2    C2
+atom[ 1] (C1  )    11    O5
+atom[ 1] (C1  )    12    N2
+atom[ 1] (C1  )    16    C7
+atom[ 2] (C2  )     1    C1
+atom[ 2] (C2  )     3    O2
+atom[ 2] (C2  )     4    C3
+atom[ 2] (C2  )    19    H2
+atom[ 3] (O2  )     2    C2
+atom[ 3] (O2  )    20   HO2
+atom[ 4] (C3  )     2    C2
+atom[ 4] (C3  )     5    O3
+atom[ 4] (C3  )     6    C4
+atom[ 4] (C3  )    21    H3
+atom[ 5] (O3  )     4    C3
+atom[ 5] (O3  )    22   HO3
+atom[ 6] (C4  )     4    C3
+atom[ 6] (C4  )     7    O4
+atom[ 6] (C4  )     8    C5
+atom[ 6] (C4  )    23    H4
+atom[ 7] (O4  )     6    C4
+atom[ 7] (O4  )    24   HO4
+atom[ 8] (C5  )     6    C4
+atom[ 8] (C5  )     9    C6
+atom[ 8] (C5  )    11    O5
+atom[ 8] (C5  )    25    H5
+atom[ 9] (C6  )     8    C5
+atom[ 9] (C6  )    10    O6
+atom[ 9] (C6  )    26   H61
+atom[ 9] (C6  )    27   H62
+atom[10] (O6  )     9    C6
+atom[10] (O6  )    28   HO6
+atom[11] (O5  )     1    C1
+atom[11] (O5  )     8    C5
+atom[12] (N2  )     1    C1
+atom[12] (N2  )    13    C8
+atom[12] (N2  )    29   HN2
+atom[13] (C8  )    12    N2
+atom[13] (C8  )    14    O8
+atom[13] (C8  )    15    N1
+atom[14] (O8  )    13    C8
+atom[15] (N1  )    13    C8
+atom[15] (N1  )    16    C7
+atom[15] (N1  )    18   H12
+atom[16] (C7  )     1    C1
+atom[16] (C7  )    15    N1
+atom[16] (C7  )    17    O7
+atom[17] (O7  )    16    C7
+atom[18] (H12 )    15    N1
+atom[19] (H2  )     2    C2
+atom[20] (HO2 )     3    O2
+atom[21] (H3  )     4    C3
+atom[22] (HO3 )     5    O3
+atom[23] (H4  )     6    C4
+atom[24] (HO4 )     7    O4
+atom[25] (H5  )     8    C5
+atom[26] (H61 )     9    C6
+atom[27] (H62 )     9    C6
+atom[28] (HO6 )    10    O6
+atom[29] (HN2 )    12    N2
+----------------------------------------END-----------------------------------------
+

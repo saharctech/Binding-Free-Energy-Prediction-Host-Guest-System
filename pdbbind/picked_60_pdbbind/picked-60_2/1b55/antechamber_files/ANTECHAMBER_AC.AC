@@ -1,0 +1,86 @@
+CHARGE      0.00 ( 0 )
+Formula: H14 C6 O18 P4 
+ATOM      1  C1  LIG     1      -2.040   4.438  38.774  0.000000        c3
+ATOM      2  O1  LIG     1      -3.200   4.741  39.532  0.000000        os
+ATOM      3  C2  LIG     1      -0.837   5.298  39.196  0.000000        c3
+ATOM      4  O2  LIG     1      -0.981   6.657  38.847  0.000000        oh
+ATOM      5  C3  LIG     1       0.362   4.796  38.396  0.000000        c3
+ATOM      6  O3  LIG     1       1.492   5.473  38.870  0.000000        os
+ATOM      7  C4  LIG     1       0.159   4.928  36.877  0.000000        c3
+ATOM      8  O4  LIG     1       1.233   4.343  36.180  0.000000        os
+ATOM      9  C5  LIG     1      -1.062   4.125  36.432  0.000000        c3
+ATOM     10  O5  LIG     1      -1.367   4.451  35.090  0.000000        os
+ATOM     11  C6  LIG     1      -2.324   4.434  37.264  0.000000        c3
+ATOM     12  O6  LIG     1      -3.186   3.341  37.048  0.000000        oh
+ATOM     13  P1  LIG     1      -3.658   3.706  40.699  0.000000        p5
+ATOM     14  OP1 LIG     1      -5.042   4.345  41.238  0.000000        oh
+ATOM     15  OP2 LIG     1      -2.638   3.437  41.746  0.000000         o
+ATOM     16  OP3 LIG     1      -4.150   2.425  39.837  0.000000        oh
+ATOM     17  P3  LIG     1       2.709   4.618  39.635  0.000000        p5
+ATOM     18  O10 LIG     1       3.680   5.597  40.153  0.000000         o
+ATOM     19  O11 LIG     1       1.925   3.970  40.957  0.000000        oh
+ATOM     20  O12 LIG     1       3.120   3.512  38.752  0.000000         o
+ATOM     21  P4  LIG     1       2.519   5.190  35.691  0.000000        p5
+ATOM     22  OP4 LIG     1       1.994   6.713  35.646  0.000000        oh
+ATOM     23  OP5 LIG     1       3.752   4.981  36.476  0.000000         o
+ATOM     24  OP6 LIG     1       2.627   4.789  34.133  0.000000        oh
+ATOM     25  P5  LIG     1      -0.771   3.589  33.759  0.000000        p5
+ATOM     26  OP7 LIG     1       0.389   4.319  33.217  0.000000         o
+ATOM     27  OP8 LIG     1      -0.262   2.089  34.336  0.000000        oh
+ATOM     28  OP9 LIG     1      -1.919   3.342  32.874  0.000000         o
+ATOM     29  H1  LIG     1      -1.752   3.414  39.027  0.000000        h1
+ATOM     30  H2  LIG     1      -0.658   5.208  40.268  0.000000        h1
+ATOM     31  HO2 LIG     1      -1.787   6.997  39.218  0.000000        ho
+ATOM     32  H3  LIG     1       0.488   3.733  38.613  0.000000        h1
+ATOM     33  H4  LIG     1       0.014   5.967  36.598  0.000000        h1
+ATOM     34  H5  LIG     1      -0.828   3.064  36.526  0.000000        h1
+ATOM     35  H6  LIG     1      -2.800   5.366  36.961  0.000000        h1
+ATOM     36  HO6 LIG     1      -3.948   3.445  37.597  0.000000        ho
+ATOM     37  HOP1LIG     1      -5.098   4.362  42.182  0.000000        ho
+ATOM     38  HOP3LIG     1      -4.522   1.733  40.363  0.000000        ho
+ATOM     39  HO11LIG     1       1.363   3.265  40.666  0.000000        ho
+ATOM     40  HOP4LIG     1       2.115   7.161  36.467  0.000000        ho
+ATOM     41  HOP6LIG     1       1.776   4.597  33.737  0.000000        ho
+ATOM     42  HOP8LIG     1       0.614   2.202  34.670  0.000000        ho
+BOND    1    1    2    1     C1   O1
+BOND    2    1    3    1     C1   C2
+BOND    3    1   11    1     C1   C6
+BOND    4    1   29    1     C1   H1
+BOND    5    2   13    1     O1   P1
+BOND    6    3    4    1     C2   O2
+BOND    7    3    5    1     C2   C3
+BOND    8    3   30    1     C2   H2
+BOND    9    4   31    1     O2  HO2
+BOND   10    5    6    1     C3   O3
+BOND   11    5    7    1     C3   C4
+BOND   12    5   32    1     C3   H3
+BOND   13    6   17    1     O3   P3
+BOND   14    7    8    1     C4   O4
+BOND   15    7    9    1     C4   C5
+BOND   16    7   33    1     C4   H4
+BOND   17    8   21    1     O4   P4
+BOND   18    9   10    1     C5   O5
+BOND   19    9   11    1     C5   C6
+BOND   20    9   34    1     C5   H5
+BOND   21   10   25    1     O5   P5
+BOND   22   11   12    1     C6   O6
+BOND   23   11   35    1     C6   H6
+BOND   24   12   36    1     O6  HO6
+BOND   25   13   14    1     P1  OP1
+BOND   26   13   15    2     P1  OP2
+BOND   27   13   16    1     P1  OP3
+BOND   28   14   37    1    OP1 HOP1
+BOND   29   16   38    1    OP3 HOP3
+BOND   30   17   18    9     P3  O10
+BOND   31   17   19    1     P3  O11
+BOND   32   17   20    9     P3  O12
+BOND   33   19   39    1    O11 HO11
+BOND   34   21   22    1     P4  OP4
+BOND   35   21   23    2     P4  OP5
+BOND   36   21   24    1     P4  OP6
+BOND   37   22   40    1    OP4 HOP4
+BOND   38   24   41    1    OP6 HOP6
+BOND   39   25   26    9     P5  OP7
+BOND   40   25   27    1     P5  OP8
+BOND   41   25   28    9     P5  OP9
+BOND   42   27   42    1    OP8 HOP8

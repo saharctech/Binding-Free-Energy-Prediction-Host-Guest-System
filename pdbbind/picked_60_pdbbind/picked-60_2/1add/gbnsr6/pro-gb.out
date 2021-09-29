@@ -1,0 +1,96 @@
+
+          -------------------------------------------------------
+          GBNSR6 2015                       
+          -------------------------------------------------------
+
+| Run on 09/26/2021 at 22:10:54
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: ../../../scripts/gbnsr6.in                                            
+| MDOUT: pro-gb.out                                                            
+|INPCRD: ../top_crd/pro.crd                                                    
+|  PARM: ../top_crd/pro.top                                                    
+|
+
+ Here is the input file:
+
+compute                                                                        
+&cntrl                                                                         
+inp=1                                                                          
+/                                                                              
+&gb                                                                            
+epsin=1.0, epsout=80, istrng=0, space=0.5,                                     
+arcres=0.2, B=0.028, alpb=1, rbornstat=0, cavity_surften=0.005                 
+/                                                                              
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 09/26/21 Time = 22:06:35
+ NATOM  =    5552 NTYPES =      14 NBONH =    2760 MBONA  =    2856
+ NTHETH =    6317 MTHETA =    3866 NPHIH =   12649 MPHIA  =   12208
+ NHPARM =       0 NPARM  =       0 NNB   =   30766 NRES   =     349
+ NBONA  =    2856 NTHETA =    3866 NPHIA =   12208 NUMBND =      69
+ NUMANG =     161 NPTRA  =     202 NATYP =      34 NPHB   =       0
+ IFBOX  =       0 NMXRS  =      24 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real              205657
+|     Hollerith          33663
+|     Integer           283049
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total             2843 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+--------------------------------------------------------------------------------
+   2.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+default_name                                                                    
+ begin time read from input coords =     0.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+--------------------------------------------------------------------------------
+   3.  RESULTS
+--------------------------------------------------------------------------------
+
+ Cavity solvation energy     67.4707
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =    -13547.1296  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =     16055.5491  VDWAALS    =         0.0000
+ EELEC  =    -25074.9721  EGB     =     -4595.1772  RESTRAINT  =         0.0000
+ ESURF  =        67.4707
+ ------------------------------------------------------------------------------
+
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =    -13547.1296  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =     16055.5491  VDWAALS    =         0.0000
+ EELEC  =    -25074.9721  EGB     =     -4595.1772  RESTRAINT  =         0.0000
+ ESURF  =        67.4707
+ ------------------------------------------------------------------------------
+
+|           Job began  at 22:10:54.716  on 09/26/2021
+|           Setup done at 22:10:54.772  on 09/26/2021
+|           Run   done at 22:10:58.914  on 09/26/2021
+|     wallclock() was called      72 times
