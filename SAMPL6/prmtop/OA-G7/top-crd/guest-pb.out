@@ -1,0 +1,365 @@
+
+          -------------------------------------------------------
+          PBSA VERSION 2019                       UC Irvine
+          -------------------------------------------------------
+
+| Run on 09/29/2021 at 22:28:51
+
+File Assignments:
+|  MDIN: ../../../scripts/pbsa.in                                              
+| MDOUT: guest-pb.out                                                          
+|INPCRD: guest.crd                                                             
+|  PARM: guest.prmtop                                                          
+|
+
+ Here is the input file:
+
+Sample single point PB calculation                                             
+&cntrl                                                                         
+ipb=1, inp=1                                                                   
+/                                                                              
+&pb                                                                            
+npbverb=1, fillratio=1.5, saopt=1, radiopt=0, epsin=1.0, epsout=80             
+/                                                                              
+ PBSA Warning in pb_read(): sprob=0.557 is optimized for inp=2 and  should not be used with inp=1. It has been reset to 1.4.
+ PBSA Warning in pb_read(): cavity_surften=0.0378 is optimized for inp=2  and should not be used with inp=1. It has been reset to 0.005000.
+ PBSA Warning in pb_read(): cavity_offset=-0.5692 is optimized for inp=2  and should not be used with inp=1. It has been reset to 0.000.
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 09/29/21 Time = 22:19:40
+ NATOM  =      20 NTYPES =       5 NBONH =      11 MBONA  =       8
+ NTHETH =      22 MTHETA =      11 NPHIH =      39 MPHIA  =      11
+ NHPARM =       0 NPARM  =       0 NNB   =      99 NRES   =       1
+ NBONA  =       8 NTHETA =      11 NPHIA =      11 NUMBND =       7
+ NUMANG =      12 NPTRA  =       8 NATYP =      14 NPHB   =       0
+ IFBOX  =       1 NMXRS  =      20 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real                 778
+|     Hollerith             63
+|     Integer            20746
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total               87 kbytes
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+HST1                                                                            
+
+General flags:
+     imin    =       1, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =      50, ntrx    =       1, ntwr    =     500
+     iwrap   =       0, ntwx    =       0, ntwv    =       0, ntwe    =       0
+     ioutfm  =       0, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       1, ntb     =       1, ipb     =       1, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     =   8.00000, intdiel =   1.00000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Energy minimization:
+     maxcyc  =       1, ncyc    =      10, ntmin   =       1
+     dx0     =   0.01000, drms    =   0.00010
+
+======== Implicit Solvent Initialization ========
+
+     Max Nonbonded Pairs:      200      200
+
+ no. of atoms processed in PB initialization:    20
+  NUM  RESI  NAME  TYPE    CHARGE ATM CRG/H   GRP CRG   PB RADI   NP RADI
+    1  GST   C1    c2   -0.272205 -0.084215 -0.082125  1.700000  1.699835
+    2  GST   C2    c2   -0.115805  0.002090 -0.041740  1.700000  1.699835
+    3  GST   C3    c     0.920295  0.920295 -0.940020  1.700000  1.699835
+    4  GST   C4    c3   -0.061305 -0.009120 -0.185225  1.700000  1.699835
+    5  GST   C5    c3   -0.061305 -0.009120 -0.185225  1.700000  1.699835
+    6  GST   C6    c3   -0.031805  0.040385 -0.133630  1.700000  1.699835
+    7  GST   C7    c3   -0.176105 -0.176105  0.766335  1.700000  1.699835
+    8  GST   O1    o    -0.842105 -0.842105  0.078190  1.500000  1.479961
+    9  GST   O2    o    -0.842105 -0.842105  0.078190  1.500000  1.479961
+   10  GST   H1    ha    0.093995  0.093995  0.093995  1.300000  1.299821
+   11  GST   H2    ha    0.093995  0.093995  0.093995  1.300000  1.299821
+   12  GST   H3    ha    0.117895  0.117895  0.117895  1.300000  1.299821
+   13  GST   H4    hc    0.017395  0.017395  0.017395  1.300000  1.324766
+   14  GST   H5    hc    0.017395  0.017395  0.017395  1.300000  1.324766
+   15  GST   H6    hc    0.017395  0.017395  0.017395  1.300000  1.324766
+   16  GST   H7    hc    0.017395  0.017395  0.017395  1.300000  1.324766
+   17  GST   H8    hc    0.017395  0.017395  0.017395  1.300000  1.324766
+   18  GST   H9    hc    0.017395  0.017395  0.017395  1.300000  1.324766
+   19  GST   H10   hc    0.036095  0.036095  0.036095  1.300000  1.324766
+   20  GST   H11   hc    0.036095  0.036095  0.036095  1.300000  1.324766
+
+ total system charges (+/-) for PB       -1.0000        1.4027       -2.4027
+ cavity_surften =        0.0050 cavity_offset =        0.0000
+
+   SAS Surface: surface dots generated:    366
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+Cpptraj Generated Restart                                                       
+ begin time read from input coords =     0.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+  NB-update: atom-based nb list      190
+
+
+======== Setting up Grid Parameters ========
+Using bounding box for grid setup
+ Bounding Box at level:           2
+ Bounding Box Center:      25.000    23.500    21.500
+ Xmin, Xmax, Xmax-Xmin:    21.667    28.309     6.642
+ Ymin, Ymax, Ymax-Ymin:    19.958    26.829     6.871
+ Zmin, Zmax, Zmax-Zmin:    17.309    26.103     8.794
+ Grid dimension at level     2    31   33   37
+ Grid origin corrected at level     2     17.000    15.000    12.000
+ Bounding Box at level:           1
+ Bounding Box Center:      25.000    23.500    21.500
+ Xmin, Xmax, Xmax-Xmin:    21.667    28.309     6.642
+ Ymin, Ymax, Ymax-Ymin:    19.958    26.829     6.871
+ Zmin, Zmax, Zmax-Zmin:    17.309    26.103     8.794
+PB Warn in setgrd(): focusing grid too large    2
+ fillratio is automatically increased to 2.500
+PB Warn in setgrd(): focusing grid too large    2
+ fillratio is automatically increased to 3.500
+ Grid dimension at level     1     7    7    9
+ Grid origin corrected at level     1      9.000     7.500     1.500
+------- VMD goodie --------
+#First Level Geometric Box
+draw materials off
+draw color green
+draw line "    9.000    7.500    1.500" "   37.000    7.500    1.500"
+draw line "    9.000    7.500    1.500" "    9.000   35.500    1.500"
+draw line "    9.000    7.500    1.500" "    9.000    7.500   37.500"
+draw line "   37.000    7.500    1.500" "   37.000   35.500    1.500"
+draw line "   37.000    7.500    1.500" "   37.000    7.500   37.500"
+draw line "    9.000   35.500    1.500" "   37.000   35.500    1.500"
+draw line "    9.000   35.500    1.500" "    9.000   35.500   37.500"
+draw line "    9.000    7.500   37.500" "   37.000    7.500   37.500"
+draw line "    9.000    7.500   37.500" "    9.000   35.500   37.500"
+draw line "   37.000   35.500   37.500" "   37.000   35.500    1.500"
+draw line "   37.000   35.500   37.500" "    9.000   35.500   37.500"
+draw line "   37.000   35.500   37.500" "   37.000    7.500   37.500"
+#2nd Level Geometric Box
+draw color blue
+draw line "   17.000   15.000   12.000" "   33.000   15.000   12.000"
+draw line "   17.000   15.000   12.000" "   17.000   32.000   12.000"
+draw line "   17.000   15.000   12.000" "   17.000   15.000   31.000"
+draw line "   33.000   15.000   12.000" "   33.000   32.000   12.000"
+draw line "   33.000   15.000   12.000" "   33.000   15.000   31.000"
+draw line "   17.000   32.000   12.000" "   33.000   32.000   12.000"
+draw line "   17.000   32.000   12.000" "   17.000   32.000   31.000"
+draw line "   17.000   15.000   31.000" "   33.000   15.000   31.000"
+draw line "   17.000   15.000   31.000" "   17.000   32.000   31.000"
+draw line "   33.000   32.000   31.000" "   33.000   32.000   12.000"
+draw line "   33.000   32.000   31.000" "   17.000   32.000   31.000"
+draw line "   33.000   32.000   31.000" "   33.000   15.000   31.000"
+--- End VMD goodie --------
+
+======== Setting up Solvent Accessibility Data ========
+Setting up working radii
+Number of SA srf points exposed  1221
+ Number of SA arcs generated   185
+ Number of SA arc points exposed         562 Number of trimer arc points exposed          38
+ with resolution (A) = .250000E+00
+
+Atomic solvent accessible surface area:
+           1   14.8478879021301
+           2    5.6092020963603
+           3    2.6396245159342
+           4    1.6497653224589
+           5    1.3198122579671
+           6    0.3299530644918
+           7    0.0000000000000
+           8   36.0939811703418
+           9   25.1214108945579
+          10   33.0392544119824
+          11   18.0214114974449
+          12   21.2752774622614
+          13   23.0273591356241
+          14   21.7758722260793
+          15   21.7758722260793
+          16   22.2764669898972
+          17   18.7723036431718
+          18   20.0237905527166
+          19   14.7675455326285
+          20   17.7711141155360
+
+ ======== FDPB Summary ========
+
+ Do FDPB every           1 steps
+ Nonbonded Update
+   residue cutoff is set to   99.9000000000000
+   fdpb cutoff is set to    5.0000000000000
+   sas cutoff is set to    9.0000000000000
+   nonbonded cutoff is set to    0.0000000000000
+ Grid Constants
+   Grid dimension       7       7       9
+   Grid spacing set to     4.000
+   Grid boundary
+         9.000    41.000
+         7.500    39.500
+         1.500    41.500
+
+ Dielectric Map
+   Use cavity radii in the prmtop file
+
+   Use probe-based SES definition
+     Compute SAS/SAR every           1 steps
+     Solvent probe radius   1.40000000000000
+     Surface dots per atom     366
+     Buried atom radii increment   0.79800000000000
+     Threshhold for exposed atom   0.08000000000000
+     Current SAS 320.13790501766346
+
+ Boundary conditions
+   sum of grid charges as independent DH spheres
+
+ Physical constants
+   Solute dielectric constant  :   1.00000000000000
+   Solvent dielectric constant :   80.0000000000000
+   Temperature (K)             :   300.000000000000
+   Ionic strength (mM)         :   0.00000000000000
+   Debye-Huckel parameter (1/A):   0.00000000000000
+
+FD Solver Option
+   Use Modified ICCG solver
+
+ Iteration data
+   Maximum iterations  :         100
+   Convergence criteria:  1.000000000000000E-03
+   Iterations required        :     5
+   Norm of the constant vector:       288.7957656217
+   Norm of the residual vector:      0.2097571040537
+   Convergence achieved       :  7.2631641119168602E-04
+
+ Total molecular surface    158.9632
+
+ ======== FDPB Summary ========
+
+ Do FDPB every           1 steps
+ Nonbonded Update
+   residue cutoff is set to   99.9000000000000
+   fdpb cutoff is set to    5.0000000000000
+   sas cutoff is set to    9.0000000000000
+   nonbonded cutoff is set to    0.0000000000000
+ Grid Constants
+   Grid dimension      31      33      37
+   Grid spacing set to     0.500
+   Grid boundary
+        17.000    33.000
+        15.000    32.000
+        12.000    31.000
+
+ Dielectric Map
+   Use cavity radii in the prmtop file
+
+   Use probe-based SES definition
+     Compute SAS/SAR every           1 steps
+     Solvent probe radius   1.40000000000000
+     Surface dots per atom     366
+     Buried atom radii increment   0.79800000000000
+     Threshhold for exposed atom   0.08000000000000
+     Current SAS 320.13790501766346
+
+ Boundary conditions
+   sum of grid charges as independent DH spheres
+
+ Physical constants
+   Solute dielectric constant  :   1.00000000000000
+   Solvent dielectric constant :   80.0000000000000
+   Temperature (K)             :   300.000000000000
+   Ionic strength (mM)         :   0.00000000000000
+   Debye-Huckel parameter (1/A):   0.00000000000000
+
+FD Solver Option
+   Use Modified ICCG solver
+
+ Iteration data
+   Maximum iterations  :         100
+   Convergence criteria:  1.000000000000000E-03
+   Iterations required        :    14
+   Norm of the constant vector:     22399.5968726582
+   Norm of the residual vector:     14.8557399742135
+   Convergence achieved       :  6.6321461313203264E-04
+
+ Total surface charge       0.9875
+ Reaction field energy    -77.4128
+ Nonpolar SAS/SAV    320.1379      0.0000
+ Cavity solvation energy      1.6007
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -86.9175  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =         0.0000  VDWAALS    =         0.7263
+ EELEC  =       -11.8317  EPB     =       -77.4128  RESTRAINT  =         0.0000
+ ECAVITY=         1.6007  EDISPER =         0.0000
+ ------------------------------------------------------------------------------
+
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -86.9175  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =         0.0000  VDWAALS    =         0.7263
+ EELEC  =       -11.8317  EPB     =       -77.4128  RESTRAINT  =         0.0000
+ ECAVITY=         1.6007  EDISPER =         0.0000
+ ------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+   5.  TIMINGS
+--------------------------------------------------------------------------------
+
+| Total time                     0.04
+| Read prm/crd time              0.00
+| Force time                     0.03
+| Nonbond force                  0.03
+| PB Nonbond                     0.03
+| PB Sasa                        0.00
+| PB FD force                    0.03
+| PB Set linear sys              0.01
+| PB Solver                      0.02
+| PB SA arc                      0.00
+| PB circle                      0.00
+| PB exmol                       0.01
+| PB exmol setup                 0.00
+| PB exmol part a                0.00
+| PB exmol part e                0.00
+| PB exmol part f                0.00
+| PB epsmap                      0.00
+|           Job began  at 22:28:51.686  on 09/29/2021
+|           Setup done at 22:28:51.689  on 09/29/2021
+|           Run   done at 22:28:51.724  on 09/29/2021
+|     wallclock() was called     110 times

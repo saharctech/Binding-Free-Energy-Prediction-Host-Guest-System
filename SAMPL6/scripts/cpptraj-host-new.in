@@ -1,0 +1,7 @@
+parm ../prmtop/TEMOA-G7/complex.prmtop
+trajin ../prmtop/TEMOA-G7/complex.inpcrd
+strip !:HST outprefix host
+trajout host.crd restart
+trajout host.pdb pdb
+run
+quit

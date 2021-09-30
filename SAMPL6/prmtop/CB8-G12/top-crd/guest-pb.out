@@ -1,0 +1,444 @@
+
+          -------------------------------------------------------
+          PBSA VERSION 2019                       UC Irvine
+          -------------------------------------------------------
+
+| Run on 09/29/2021 at 22:28:43
+
+File Assignments:
+|  MDIN: ../../../scripts/pbsa.in                                              
+| MDOUT: guest-pb.out                                                          
+|INPCRD: guest.crd                                                             
+|  PARM: guest.prmtop                                                          
+|
+
+ Here is the input file:
+
+Sample single point PB calculation                                             
+&cntrl                                                                         
+ipb=1, inp=1                                                                   
+/                                                                              
+&pb                                                                            
+npbverb=1, fillratio=1.5, saopt=1, radiopt=0, epsin=1.0, epsout=80             
+/                                                                              
+ PBSA Warning in pb_read(): sprob=0.557 is optimized for inp=2 and  should not be used with inp=1. It has been reset to 1.4.
+ PBSA Warning in pb_read(): cavity_surften=0.0378 is optimized for inp=2  and should not be used with inp=1. It has been reset to 0.005000.
+ PBSA Warning in pb_read(): cavity_offset=-0.5692 is optimized for inp=2  and should not be used with inp=1. It has been reset to 0.000.
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 09/29/21 Time = 22:19:36
+ NATOM  =      58 NTYPES =      10 NBONH =      30 MBONA  =      31
+ NTHETH =      70 MTHETA =      43 NPHIH =     121 MPHIA  =      80
+ NHPARM =       0 NPARM  =       0 NNB   =     338 NRES   =       1
+ NBONA  =      31 NTHETA =      43 NPHIA =      80 NUMBND =      14
+ NUMANG =      26 NPTRA  =      17 NATYP =      18 NPHB   =       0
+ IFBOX  =       1 NMXRS  =      58 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real                2196
+|     Hollerith            177
+|     Integer            22652
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total              106 kbytes
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+HST1                                                                            
+
+General flags:
+     imin    =       1, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =      50, ntrx    =       1, ntwr    =     500
+     iwrap   =       0, ntwx    =       0, ntwv    =       0, ntwe    =       0
+     ioutfm  =       0, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       1, ntb     =       1, ipb     =       1, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     =   8.00000, intdiel =   1.00000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Energy minimization:
+     maxcyc  =       1, ncyc    =      10, ntmin   =       1
+     dx0     =   0.01000, drms    =   0.00010
+
+======== Implicit Solvent Initialization ========
+
+     Max Nonbonded Pairs:     1682     1682
+
+ no. of atoms processed in PB initialization:    58
+  NUM  RESI  NAME  TYPE    CHARGE ATM CRG/H   GRP CRG   PB RADI   NP RADI
+    1  GST   C1    ca   -0.083700  0.076600  0.165000  1.700000  1.699835
+    2  GST   C2    ca   -0.115200  0.044200  0.148500  1.700000  1.699835
+    3  GST   C3    ca   -0.115200  0.044200  0.148500  1.700000  1.699835
+    4  GST   C4    ca   -0.108800  0.027700 -0.104100  1.700000  1.699835
+    5  GST   C5    ca   -0.108800  0.027700 -0.104100  1.700000  1.699835
+    6  GST   C6    ca   -0.080500  0.085900 -0.018000  1.700000  1.699835
+    7  GST   C7    ca   -0.141200  0.013200  0.073700  1.700000  1.699835
+    8  GST   C8    ca   -0.186300 -0.186300  0.428900  1.700000  1.699835
+    9  GST   C9    ca   -0.063300 -0.063300 -0.147700  1.700000  1.699835
+   10  GST   C10   ca   -0.176000 -0.176000  0.261000  1.700000  1.699835
+   11  GST   C11   ca    0.082400  0.082400 -0.024900  1.700000  1.699835
+   12  GST   C12   ca    0.123800  0.123800 -0.104400  1.700000  1.699835
+   13  GST   C13   c     0.592600  0.592600 -0.217900  1.700000  1.699835
+   14  GST   C14   c3   -0.032900  0.088700 -0.076700  1.700000  1.699835
+   15  GST   C15   c3   -0.106000  0.064200  0.379500  1.700000  1.699835
+   16  GST   C16   c3   -0.106000  0.064200  0.379500  1.700000  1.699835
+   17  GST   C17   c3    0.110900  0.314700  0.136300  1.700000  1.699835
+   18  GST   C18   c3    0.110900  0.314700  0.136300  1.700000  1.699835
+   19  GST   C19   c3   -0.177200 -0.102100  0.643900  1.700000  1.699835
+   20  GST   C20   c3   -0.080600  0.000600  0.193700  1.700000  1.699835
+   21  GST   C21   c3    0.110600  0.260300 -0.056700  1.700000  1.699835
+   22  GST   C22   c3    0.114800  0.261200 -0.062600  1.700000  1.699835
+   23  GST   C23   c3    0.175200  0.381600 -0.037000  1.700000  1.699835
+   24  GST   C24   c3   -0.065300  0.064700 -0.036800  1.700000  1.699835
+   25  GST   N1    n4   -0.687800 -0.242600  0.768400  1.550000  1.624999
+   26  GST   O1    o    -0.522100 -0.522100  0.070500  1.500000  1.479961
+   27  GST   O2    os   -0.317000 -0.317000  0.025700  1.500000  1.500006
+   28  GST   O3    os   -0.323800 -0.323800  0.061200  1.500000  1.500006
+   29  GST   H1    ha    0.160300  0.160300  0.160300  1.300000  1.299821
+   30  GST   H2    ha    0.159400  0.159400  0.159400  1.300000  1.299821
+   31  GST   H3    ha    0.159400  0.159400  0.159400  1.300000  1.299821
+   32  GST   H4    ha    0.136500  0.136500  0.136500  1.300000  1.299821
+   33  GST   H5    ha    0.136500  0.136500  0.136500  1.300000  1.299821
+   34  GST   H6    ha    0.166400  0.166400  0.166400  1.300000  1.299821
+   35  GST   H7    ha    0.154400  0.154400  0.154400  1.300000  1.299821
+   36  GST   H8    hc    0.060800  0.060800  0.060800  1.300000  1.324766
+   37  GST   H9    hc    0.060800  0.060800  0.060800  1.300000  1.324766
+   38  GST   H10   hc    0.085100  0.085100  0.085100  1.300000  1.324766
+   39  GST   H11   hc    0.085100  0.085100  0.085100  1.300000  1.324766
+   40  GST   H12   hc    0.085100  0.085100  0.085100  1.300000  1.324766
+   41  GST   H13   hc    0.085100  0.085100  0.085100  1.300000  1.324766
+   42  GST   H14   hx    0.101900  0.101900  0.101900  1.300000  0.979989
+   43  GST   H15   hx    0.101900  0.101900  0.101900  1.300000  0.979989
+   44  GST   H16   hx    0.101900  0.101900  0.101900  1.300000  0.979989
+   45  GST   H17   hx    0.101900  0.101900  0.101900  1.300000  0.979989
+   46  GST   H18   hc    0.075100  0.075100  0.075100  1.300000  1.324766
+   47  GST   H19   hc    0.081200  0.081200  0.081200  1.300000  1.324766
+   48  GST   H20   h1    0.049900  0.049900  0.049900  1.300000  1.235677
+   49  GST   H21   h1    0.049900  0.049900  0.049900  1.300000  1.235677
+   50  GST   H22   h1    0.049900  0.049900  0.049900  1.300000  1.235677
+   51  GST   H23   h1    0.048800  0.048800  0.048800  1.300000  1.235677
+   52  GST   H24   h1    0.048800  0.048800  0.048800  1.300000  1.235677
+   53  GST   H25   h1    0.048800  0.048800  0.048800  1.300000  1.235677
+   54  GST   H26   hx    0.103200  0.103200  0.103200  1.300000  0.979989
+   55  GST   H27   hx    0.103200  0.103200  0.103200  1.300000  0.979989
+   56  GST   H28   hc    0.065000  0.065000  0.065000  1.300000  1.324766
+   57  GST   H29   hc    0.065000  0.065000  0.065000  1.300000  1.324766
+   58  GST   H30   hn    0.445200  0.445200  0.445200  1.300000  0.534539
+
+ total system charges (+/-) for PB        1.0000        4.5977       -3.5977
+ cavity_surften =        0.0050 cavity_offset =        0.0000
+
+   SAS Surface: surface dots generated:    366
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+Cpptraj Generated Restart                                                       
+ begin time read from input coords =     0.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+  NB-update: atom-based nb list     1237
+
+
+======== Setting up Grid Parameters ========
+Using bounding box for grid setup
+ Bounding Box at level:           2
+ Bounding Box Center:      24.500    22.000    23.000
+ Xmin, Xmax, Xmax-Xmin:    16.842    32.565    15.723
+ Ymin, Ymax, Ymax-Ymin:    16.986    26.973     9.986
+ Zmin, Zmax, Zmax-Zmin:    15.397    30.686    15.289
+ Grid dimension at level     2    49   39   49
+ Grid origin corrected at level     2     12.000    12.000    10.500
+ Bounding Box at level:           1
+ Bounding Box Center:      24.500    22.000    23.000
+ Xmin, Xmax, Xmax-Xmin:    16.842    32.565    15.723
+ Ymin, Ymax, Ymax-Ymin:    16.986    26.973     9.986
+ Zmin, Zmax, Zmax-Zmin:    15.397    30.686    15.289
+PB Warn in setgrd(): focusing grid too large    2
+ fillratio is automatically increased to 2.500
+ Grid dimension at level     1    11    7   11
+ Grid origin corrected at level     1      0.500     6.000    -1.000
+------- VMD goodie --------
+#First Level Geometric Box
+draw materials off
+draw color green
+draw line "    0.500    6.000   -1.000" "   44.500    6.000   -1.000"
+draw line "    0.500    6.000   -1.000" "    0.500   34.000   -1.000"
+draw line "    0.500    6.000   -1.000" "    0.500    6.000   43.000"
+draw line "   44.500    6.000   -1.000" "   44.500   34.000   -1.000"
+draw line "   44.500    6.000   -1.000" "   44.500    6.000   43.000"
+draw line "    0.500   34.000   -1.000" "   44.500   34.000   -1.000"
+draw line "    0.500   34.000   -1.000" "    0.500   34.000   43.000"
+draw line "    0.500    6.000   43.000" "   44.500    6.000   43.000"
+draw line "    0.500    6.000   43.000" "    0.500   34.000   43.000"
+draw line "   44.500   34.000   43.000" "   44.500   34.000   -1.000"
+draw line "   44.500   34.000   43.000" "    0.500   34.000   43.000"
+draw line "   44.500   34.000   43.000" "   44.500    6.000   43.000"
+#2nd Level Geometric Box
+draw color blue
+draw line "   12.000   12.000   10.500" "   37.000   12.000   10.500"
+draw line "   12.000   12.000   10.500" "   12.000   32.000   10.500"
+draw line "   12.000   12.000   10.500" "   12.000   12.000   35.500"
+draw line "   37.000   12.000   10.500" "   37.000   32.000   10.500"
+draw line "   37.000   12.000   10.500" "   37.000   12.000   35.500"
+draw line "   12.000   32.000   10.500" "   37.000   32.000   10.500"
+draw line "   12.000   32.000   10.500" "   12.000   32.000   35.500"
+draw line "   12.000   12.000   35.500" "   37.000   12.000   35.500"
+draw line "   12.000   12.000   35.500" "   12.000   32.000   35.500"
+draw line "   37.000   32.000   35.500" "   37.000   32.000   10.500"
+draw line "   37.000   32.000   35.500" "   12.000   32.000   35.500"
+draw line "   37.000   32.000   35.500" "   37.000   12.000   35.500"
+--- End VMD goodie --------
+
+======== Setting up Solvent Accessibility Data ========
+Setting up working radii
+Number of SA srf points exposed  2692
+ Number of SA arcs generated   785
+ Number of SA arc points exposed        1592 Number of trimer arc points exposed         140
+ with resolution (A) = .250000E+00
+
+Atomic solvent accessible surface area:
+           1   10.5584980637370
+           2    9.5686388702616
+           3   10.8884511282288
+           4    5.2792490318685
+           5    8.5787796767863
+           6    7.2589674188192
+           7    7.2589674188192
+           8    5.2792490318685
+           9    3.2995306449178
+          10    2.9695775804260
+          11    4.9492959673767
+          12    4.9492959673767
+          13    3.6294837094096
+          14    0.0000000000000
+          15    0.0000000000000
+          16    0.0000000000000
+          17    0.3299530644918
+          18    0.6599061289836
+          19    0.0000000000000
+          20    0.0000000000000
+          21    4.2893898383931
+          22    4.9492959673767
+          23    0.9898591934753
+          24    0.0000000000000
+          25    0.0000000000000
+          26   35.5164774716163
+          27    7.7962999327938
+          28   15.5925998655876
+          29   31.2871727386197
+          30   30.7865779748018
+          31   30.5362805928928
+          32   16.5196272059912
+          33   22.0261696079882
+          34    8.0095162210866
+          35   20.7746826984435
+          36   16.0190324421733
+          37    9.5113005125404
+          38   21.0249800803524
+          39   16.0190324421733
+          40   10.2621926582673
+          41    6.2574345477239
+          42   20.0237905527166
+          43   16.5196272059912
+          44   12.7651664773568
+          45    8.0095162210866
+          46   15.7687350602643
+          47   11.7639769497210
+          48   34.7913360853451
+          49   23.2776565175330
+          50   23.2776565175330
+          51   34.0404439396182
+          52   24.5291434270778
+          53   22.5267643718062
+          54   15.2681402964464
+          55   15.2681402964464
+          56   13.2657612411747
+          57   13.5160586230837
+          58    6.5077319296329
+
+ ======== FDPB Summary ========
+
+ Do FDPB every           1 steps
+ Nonbonded Update
+   residue cutoff is set to   99.9000000000000
+   fdpb cutoff is set to    5.0000000000000
+   sas cutoff is set to    9.0000000000000
+   nonbonded cutoff is set to    0.0000000000000
+ Grid Constants
+   Grid dimension      11       7      11
+   Grid spacing set to     4.000
+   Grid boundary
+         0.500    48.500
+         6.000    38.000
+        -1.000    47.000
+
+ Dielectric Map
+   Use cavity radii in the prmtop file
+
+   Use probe-based SES definition
+     Compute SAS/SAR every           1 steps
+     Solvent probe radius   1.40000000000000
+     Surface dots per atom     366
+     Buried atom radii increment   0.79800000000000
+     Threshhold for exposed atom   0.08000000000000
+     Current SAS 704.74541140850226
+
+ Boundary conditions
+   sum of grid charges as independent DH spheres
+
+ Physical constants
+   Solute dielectric constant  :   1.00000000000000
+   Solvent dielectric constant :   80.0000000000000
+   Temperature (K)             :   300.000000000000
+   Ionic strength (mM)         :   0.00000000000000
+   Debye-Huckel parameter (1/A):   0.00000000000000
+
+FD Solver Option
+   Use Modified ICCG solver
+
+ Iteration data
+   Maximum iterations  :         100
+   Convergence criteria:  1.000000000000000E-03
+   Iterations required        :     6
+   Norm of the constant vector:       422.6536633819
+   Norm of the residual vector:      0.1956877984533
+   Convergence achieved       :  4.6299799435654089E-04
+
+ Total molecular surface    403.8330
+
+ ======== FDPB Summary ========
+
+ Do FDPB every           1 steps
+ Nonbonded Update
+   residue cutoff is set to   99.9000000000000
+   fdpb cutoff is set to    5.0000000000000
+   sas cutoff is set to    9.0000000000000
+   nonbonded cutoff is set to    0.0000000000000
+ Grid Constants
+   Grid dimension      49      39      49
+   Grid spacing set to     0.500
+   Grid boundary
+        12.000    37.000
+        12.000    32.000
+        10.500    35.500
+
+ Dielectric Map
+   Use cavity radii in the prmtop file
+
+   Use probe-based SES definition
+     Compute SAS/SAR every           1 steps
+     Solvent probe radius   1.40000000000000
+     Surface dots per atom     366
+     Buried atom radii increment   0.79800000000000
+     Threshhold for exposed atom   0.08000000000000
+     Current SAS 704.74541140850226
+
+ Boundary conditions
+   sum of grid charges as independent DH spheres
+
+ Physical constants
+   Solute dielectric constant  :   1.00000000000000
+   Solvent dielectric constant :   80.0000000000000
+   Temperature (K)             :   300.000000000000
+   Ionic strength (mM)         :   0.00000000000000
+   Debye-Huckel parameter (1/A):   0.00000000000000
+
+FD Solver Option
+   Use Modified ICCG solver
+
+ Iteration data
+   Maximum iterations  :         100
+   Convergence criteria:  1.000000000000000E-03
+   Iterations required        :    18
+   Norm of the constant vector:     42563.1135853968
+   Norm of the residual vector:     32.9834542343141
+   Convergence achieved       :  7.7493048454120876E-04
+
+ Total surface charge      -0.9874
+ Reaction field energy    -58.7548
+ Nonpolar SAS/SAV    704.7454      0.0000
+ Cavity solvation energy      3.5237
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -33.6213  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =         0.0000  VDWAALS    =         5.7707
+ EELEC  =        15.8391  EPB     =       -58.7548  RESTRAINT  =         0.0000
+ ECAVITY=         3.5237  EDISPER =         0.0000
+ ------------------------------------------------------------------------------
+
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -33.6213  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =         0.0000  VDWAALS    =         5.7707
+ EELEC  =        15.8391  EPB     =       -58.7548  RESTRAINT  =         0.0000
+ ECAVITY=         3.5237  EDISPER =         0.0000
+ ------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+   5.  TIMINGS
+--------------------------------------------------------------------------------
+
+| Total time                     0.11
+| Read prm/crd time              0.00
+| Force time                     0.11
+| Nonbond force                  0.11
+| PB Nonbond                     0.11
+| PB FD grid                     0.00
+| PB Sasa                        0.01
+| PB FD force                    0.11
+| PB Set linear sys              0.03
+| PB Solver                      0.08
+| PB SA srf                      0.00
+| PB SA arc                      0.01
+| PB circle                      0.00
+| PB exclude                     0.00
+| PB exmol                       0.03
+| PB exmol setup                 0.01
+| PB exmol part b                0.00
+| PB exmol part c                0.00
+| PB exmol part e                0.00
+| PB exmol part f                0.01
+| PB epsbnd                      0.00
+| PB epsmap                      0.00
+|           Job began  at 22:28:43.065  on 09/29/2021
+|           Setup done at 22:28:43.069  on 09/29/2021
+|           Run   done at 22:28:43.181  on 09/29/2021
+|     wallclock() was called     110 times
