@@ -1,5 +1,0 @@
-Etot   =      -352.2193 
-VDWAALS    =       -10.23
-EELEC  =      -304.3561  
-EPB     =       -41.3567
-ECAVITY=         3.7270  EDI

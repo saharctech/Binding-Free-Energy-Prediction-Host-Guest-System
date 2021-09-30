@@ -1,4 +1,0 @@
-VDWAALS    =     -2134.90
-EELEC  =    -19691.0842  
-EPB     =     -6067.9732
-ECAVITY=        63.4742  EDI
