@@ -1,3 +1,5 @@
 .idea
 pdbbind
 ~$host-guest-dataset_clean.xlsx
+.DS_Store
+.gitignore
