@@ -1,0 +1,123 @@
+
+          -------------------------------------------------------
+          GBNSR6 2015                       
+          -------------------------------------------------------
+
+| Run on 11/07/2021 at 11:48:58
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: ../scripts/gbnsr6.in                                                  
+| MDOUT: guest-gb-radii.out                                                    
+|INPCRD: guest.crd                                                             
+|  PARM: guest.prmtop                                                          
+|
+
+ Here is the input file:
+
+compute                                                                        
+&cntrl                                                                         
+inp=1                                                                          
+/                                                                              
+&gb                                                                            
+epsin=1.0, epsout=80, istrng=0, space=0.5,                                     
+arcres=0.2, B=0.028, alpb=1, rbornstat=1, cavity_surften=0.005                 
+/                                                                              
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 08/29/21 Time = 13:42:29
+ NATOM  =      22 NTYPES =       5 NBONH =      14 MBONA  =       8
+ NTHETH =      34 MTHETA =       9 NPHIH =      63 MPHIA  =      23
+ NHPARM =       0 NPARM  =       0 NNB   =     133 NRES   =       1
+ NBONA  =       8 NTHETA =       9 NPHIA =      23 NUMBND =       5
+ NUMANG =       7 NPTRA  =       9 NATYP =      15 NPHB   =       0
+ IFBOX  =       1 NMXRS  =      22 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+GB Warning in  gb_read(): B=0 is recommended for molecules with more than 50 atoms
+
+|     Memory Use     Allocated
+|     Real                 855
+|     Hollerith            135
+|     Integer            19072
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total               81 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+Cpptraj Generated Restart                                                       
+ begin time read from input coords =   551.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+--------------------------------------------------------------------------------
+   3.  RESULTS
+--------------------------------------------------------------------------------
+
+Print:    Atom number      Inverse Effective Born Radii
+rinv           1            0.43249226
+rinv           2            0.61073629
+rinv           3            0.63499778
+rinv           4            0.43743920
+rinv           5            0.61977354
+rinv           6            0.63785506
+rinv           7            0.43179135
+rinv           8            0.58257940
+rinv           9            0.63864376
+rinv          10            0.43670084
+rinv          11            0.61202110
+rinv          12            0.62828172
+rinv          13            0.41205288
+rinv          14            0.62302905
+rinv          15            0.42874977
+rinv          16            0.60139377
+rinv          17            0.63137980
+rinv          18            0.42968290
+rinv          19            0.63506152
+rinv          20            0.60452920
+rinv          21            0.55811772
+rinv          22            0.91233462
+
+ Cavity solvation energy      1.5403
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -11.7225  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =       -11.1740  VDWAALS    =         0.0000
+ EELEC  =         5.6233  EGB     =        -7.7121  RESTRAINT  =         0.0000
+ ESURF  =         1.5403
+ ------------------------------------------------------------------------------
+
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =       -11.7225  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =       -11.1740  VDWAALS    =         0.0000
+ EELEC  =         5.6233  EGB     =        -7.7121  RESTRAINT  =         0.0000
+ ESURF  =         1.5403
+ ------------------------------------------------------------------------------
+
+|           Job began  at 11:48:58.198  on 11/07/2021
+|           Setup done at 11:48:58.202  on 11/07/2021
+|           Run   done at 11:48:58.214  on 11/07/2021
+|     wallclock() was called      72 times

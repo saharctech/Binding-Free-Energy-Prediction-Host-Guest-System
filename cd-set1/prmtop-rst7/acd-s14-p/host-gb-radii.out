@@ -1,0 +1,226 @@
+
+          -------------------------------------------------------
+          GBNSR6 2015                       
+          -------------------------------------------------------
+
+| Run on 11/06/2021 at 09:46:49
+  [-O]verwriting output
+
+File Assignments:
+|  MDIN: ../scripts/gbnsr6.in                                                  
+| MDOUT: host-gb-radii.out                                                     
+|INPCRD: host.crd                                                              
+|  PARM: host.prmtop                                                           
+|
+
+ Here is the input file:
+
+compute                                                                        
+&cntrl                                                                         
+inp=1                                                                          
+/                                                                              
+&gb                                                                            
+epsin=1.0, epsout=80, istrng=0, space=0.5,                                     
+arcres=0.2, B=0.028, alpb=1, rbornstat=0, rbornstat=1, cavity_surften=0.005    
+/                                                                              
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+| Flags:                                                                        
+| New format PARM file being parsed.
+| Version =    1.000 Date = 08/29/21 Time = 13:29:58
+ NATOM  =     126 NTYPES =       6 NBONH =      60 MBONA  =      72
+ NTHETH =     138 MTHETA =     108 NPHIH =     252 MPHIA  =     216
+ NHPARM =       0 NPARM  =       0 NNB   =     762 NRES   =       6
+ NBONA  =      72 NTHETA =     108 NPHIA =     216 NUMBND =       6
+ NUMANG =      12 NPTRA  =      20 NATYP =      15 NPHB   =       0
+ IFBOX  =       1 NMXRS  =      21 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+
+|     Memory Use     Allocated
+|     Real                4721
+|     Hollerith            764
+|     Integer            23829
+|     Max Pairs              1
+|     Max Rstack             1
+|     Max Istack             1
+|       Total              132 kbytes
+
+| Note: 1-4 EEL scale factors are being read from the topology file.
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+Cpptraj Generated Restart                                                       
+ begin time read from input coords =   551.000 ps
+
+ Number of triangulated 3-point waters found:        0
+
+--------------------------------------------------------------------------------
+   3.  RESULTS
+--------------------------------------------------------------------------------
+
+Print:    Atom number      Inverse Effective Born Radii
+rinv           1            0.36186988
+rinv           2            0.57007991
+rinv           3            0.36929314
+rinv           4            0.39212953
+rinv           5            0.59847223
+rinv           6            0.54755543
+rinv           7            0.56170097
+rinv           8            0.37417089
+rinv           9            0.54288232
+rinv          10            0.53804887
+rinv          11            0.91465028
+rinv          12            0.33032662
+rinv          13            0.50865220
+rinv          14            0.34146881
+rinv          15            0.48231614
+rinv          16            0.45507210
+rinv          17            0.43561189
+rinv          18            0.55135109
+rinv          19            0.63071940
+rinv          20            0.56307471
+rinv          21            0.89850723
+rinv          22            0.36402777
+rinv          23            0.56774046
+rinv          24            0.35124517
+rinv          25            0.38822436
+rinv          26            0.59827616
+rinv          27            0.56020007
+rinv          28            0.77377644
+rinv          29            0.37295014
+rinv          30            0.55563928
+rinv          31            0.53697665
+rinv          32            0.87457560
+rinv          33            0.33118677
+rinv          34            0.49885732
+rinv          35            0.34049511
+rinv          36            0.50022542
+rinv          37            0.42593912
+rinv          38            0.42849763
+rinv          39            0.54261858
+rinv          40            0.60357270
+rinv          41            0.56961056
+rinv          42            0.90501105
+rinv          43            0.37015010
+rinv          44            0.57609123
+rinv          45            0.35095069
+rinv          46            0.39086593
+rinv          47            0.60421276
+rinv          48            0.53703390
+rinv          49            0.51560010
+rinv          50            0.36495143
+rinv          51            0.54226214
+rinv          52            0.54153374
+rinv          53            0.93040835
+rinv          54            0.33354809
+rinv          55            0.51838700
+rinv          56            0.34469730
+rinv          57            0.49326732
+rinv          58            0.46577828
+rinv          59            0.42858347
+rinv          60            0.47710714
+rinv          61            0.63806280
+rinv          62            0.55561284
+rinv          63            0.57029119
+rinv          64            0.36038051
+rinv          65            0.56036770
+rinv          66            0.36988203
+rinv          67            0.40336612
+rinv          68            0.61730627
+rinv          69            0.54016221
+rinv          70            0.50546007
+rinv          71            0.36957746
+rinv          72            0.52554825
+rinv          73            0.53464868
+rinv          74            0.84273427
+rinv          75            0.33525472
+rinv          76            0.52533942
+rinv          77            0.34816923
+rinv          78            0.49730512
+rinv          79            0.44421662
+rinv          80            0.43954021
+rinv          81            0.54409704
+rinv          82            0.62063455
+rinv          83            0.59187673
+rinv          84            0.89037879
+rinv          85            0.37722385
+rinv          86            0.58187833
+rinv          87            0.35406176
+rinv          88            0.39001288
+rinv          89            0.59556034
+rinv          90            0.53161237
+rinv          91            0.52618656
+rinv          92            0.37286121
+rinv          93            0.55770400
+rinv          94            0.53903126
+rinv          95            0.83992463
+rinv          96            0.33646340
+rinv          97            0.50661610
+rinv          98            0.34990164
+rinv          99            0.50679542
+rinv         100            0.46155419
+rinv         101            0.43724192
+rinv         102            0.54148118
+rinv         103            0.62699592
+rinv         104            0.56100555
+rinv         105            0.90978996
+rinv         106            0.37267946
+rinv         107            0.55029795
+rinv         108            0.35594428
+rinv         109            0.39459535
+rinv         110            0.60706134
+rinv         111            0.53734984
+rinv         112            0.53632858
+rinv         113            0.36219562
+rinv         114            0.53239570
+rinv         115            0.52902240
+rinv         116            0.89517948
+rinv         117            0.33359888
+rinv         118            0.51809132
+rinv         119            0.34277085
+rinv         120            0.49973318
+rinv         121            0.43729715
+rinv         122            0.44355730
+rinv         123            0.55321668
+rinv         124            0.61974713
+rinv         125            0.58014902
+rinv         126            0.83577692
+
+ Cavity solvation energy      5.0659
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =      -104.9612  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =       415.0081  VDWAALS    =         0.0000
+ EELEC  =      -432.2783  EGB     =       -92.7569  RESTRAINT  =         0.0000
+ ESURF  =         5.0659
+ ------------------------------------------------------------------------------
+
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+ NSTEP =        1   TIME(PS) =       0.000  TEMP(K) =     0.00  PRESS =     0.0
+ Etot   =      -104.9612  EKtot   =         0.0000  EPtot      =         0.0000
+ BOND   =         0.0000  ANGLE   =         0.0000  DIHED      =         0.0000
+ 1-4 NB =         0.0000  1-4 EEL =       415.0081  VDWAALS    =         0.0000
+ EELEC  =      -432.2783  EGB     =       -92.7569  RESTRAINT  =         0.0000
+ ESURF  =         5.0659
+ ------------------------------------------------------------------------------
+
+|           Job began  at 09:46:49.758  on 11/06/2021
+|           Setup done at 09:46:49.760  on 11/06/2021
+|           Run   done at 09:46:49.812  on 11/06/2021
+|     wallclock() was called      72 times
